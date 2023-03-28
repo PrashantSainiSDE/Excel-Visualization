@@ -1,0 +1,24 @@
+.navbar {
+  background-color: rgb(73, 194, 121);
+
+}
+.navbar-brand {
+  color: honeydew;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+}
+
+ul {
+  background-color: #49c279;
+}
+
+.nav.navbar-nav li a {
+  color: honeydew;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: inline-block;
+  font-weight: bolder;
+}
+.nav.navbar-nav li.active a{
+  color:#49c279;
+  background-color: honeydew;
+}

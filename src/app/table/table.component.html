@@ -1,0 +1,22 @@
+<p *ngIf="show">Double click on column name to view in chart</p>
+
+<div class="table-responsive">
+  <table class="table table-hover">
+    <tbody>
+      <tr *ngFor="let person of exData">
+        <td *ngFor="let property of person | keyvalue">
+          <tr>
+            <th (dblclick)="getLabel(property.key)" >
+              {{ property?.key }}
+            </th>
+          </tr>
+          <tr>
+            <td>
+              {{ property?.value }}
+            </td>
+          </tr>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
